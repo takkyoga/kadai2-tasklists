@@ -1,0 +1,11 @@
+<h1>new task 作成</h1>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :content, 'task' %>
+  <%= f.text_field :content %>
+  <%= f.submit '登録' %>
+<% end %>
+
+<br>
+
+<%= link_to 'back to index', tasks_path %>
