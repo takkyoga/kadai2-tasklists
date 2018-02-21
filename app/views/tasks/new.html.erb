@@ -1,10 +1,6 @@
 <h1>new task 作成</h1>
 
-<%= form_for(@task) do |f| %>
-  <%= f.label :content, 'task' %>
-  <%= f.text_field :content %>
-  <%= f.submit '登録' %>
-<% end %>
+<%= render 'form', task: @task %>
 
 <br>
 
